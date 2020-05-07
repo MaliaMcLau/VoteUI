@@ -1,1 +1,12 @@
-<p>election-list works!</p>
+<biplab-notifier [(notification)]="notification"></biplab-notifier>
+<div *ngFor="let electionItem of electionContent; index as i">
+    <app-election-item [index]="i" [election]="electionItem"></app-election-item>
+</div>
+
+<mat-paginator
+    [pageSizeOptions]="[5, 10, 20, 50, 100]"
+    (page)="paginateText($event)"
+    [pageSize]="pageEvent.pageSize"
+    [length]="pageLength"
+    showFirstLastButtons>
+</mat-paginator>
