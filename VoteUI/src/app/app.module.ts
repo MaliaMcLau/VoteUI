@@ -7,6 +7,7 @@ import { ElectionItemComponent } from './election-item/election-item.component';
 import { ElectionListComponent } from './election-list/election-list.component';
 import { CandidateListComponent } from './candidate-list/candidate-list.component';
 import { CandidateItemComponent } from './candidate-item/candidate-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CandidateItemComponent } from './candidate-item/candidate-item.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
