@@ -5,7 +5,7 @@
 
 <mat-paginator
     [pageSizeOptions]="[5, 10, 20, 50, 100]"
-    (page)="paginateText($event)"
+    (page)="updatePage($event)"
     [pageSize]="pageEvent.pageSize"
     [length]="pageLength"
     showFirstLastButtons>
