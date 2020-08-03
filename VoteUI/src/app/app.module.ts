@@ -10,6 +10,7 @@ import { CandidateListComponent } from './candidate-list/candidate-list.componen
 import { CandidateItemComponent } from './candidate-item/candidate-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotifierModule } from 'biplab-notifier';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NotifierModule } from 'biplab-notifier';
     ElectionItemComponent,
     ElectionListComponent,
     CandidateListComponent,
-    CandidateItemComponent
+    CandidateItemComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
